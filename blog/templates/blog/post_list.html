@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>MatJack's blog</title>
+    </head>
+    <body>
+        <h1>MatJack's blog</h1>
+
+        {% for post in posts %}
+            <div>
+                <h2>{{ post.title }}</h2>
+                <p>published: {{ post.published_date }}</p>
+                <div>{{ post.text|linebreaks }}</div>
+            </div>
+        {% endfor %}
+    </body>
+</html>
